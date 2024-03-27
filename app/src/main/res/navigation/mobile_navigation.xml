@@ -10,13 +10,11 @@
         android:name="com.example.labwork2.ui.second.SecondFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_second" />
-
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.labwork2.ui.first.FirstFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_first" />
-
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.labwork2.ui.third.ThirdFragment"

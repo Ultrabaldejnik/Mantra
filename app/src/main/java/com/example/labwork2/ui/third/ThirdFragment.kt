@@ -95,6 +95,4 @@ class ThirdFragment : Fragment() {
         const val TAG = "third_fragment"
         private const val SAVED_TEXT = "text"
     }
-
-
 }
