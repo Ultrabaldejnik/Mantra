@@ -3,30 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_gallery">
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.labwork2.ui.second.SecondFragment"
+        android:name="com.example.labwork2.ui.ListFragment.ListFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_second" />
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.labwork2.ui.first.FirstFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_first" />
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.labwork2.ui.third.ThirdFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_third" >
+        tools:layout="@layout/fragment_second" >
         <action
-            android:id="@+id/action_nav_slideshow_to_innerThirdFragment"
-            app:destination="@id/innerThirdFragment" />
+            android:id="@+id/action_nav_home_to_heroFragment"
+            app:destination="@id/heroFragment" />
     </fragment>
     <fragment
-        android:id="@+id/innerThirdFragment"
-        android:name="com.example.labwork2.ui.innerThird.InnerThirdFragment"
-        android:label="fragment_inner_third"
-        tools:layout="@layout/fragment_inner_third" />
+        android:id="@+id/nav_gallery"
+        android:name="com.example.labwork2.ui.favouriteScreen.FavouriteFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_nav_gallery_to_favDetailsFragment"
+            app:destination="@id/favDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heroFragment"
+        android:name="com.example.labwork2.ui.heroScreen.HeroFragment"
+        android:label="HeroFragment" />
+    <fragment
+        android:id="@+id/favDetailsFragment"
+        android:name="com.example.labwork2.ui.favScreenDetails.FavDetailsFragment"
+        android:label="FavDetailsFragment" />
 </navigation>

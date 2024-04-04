@@ -3,13 +3,9 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_menu_camera"
-        android:title="Первый" />
+        android:title="Избранное" />
     <item
         android:id="@+id/nav_gallery"
         android:icon="@drawable/ic_menu_gallery"
-        android:title="Второй" />
-    <item
-        android:id="@+id/nav_slideshow"
-        android:icon="@drawable/ic_menu_slideshow"
-        android:title="Третий" />
+        android:title="Герои" />
 </menu>
